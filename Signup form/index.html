@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signup form project based on Figma design">
+    <title>Signup Form</title>
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <header><h1>Signup</h1></header>
+        <main>
+            <section>
+                
+                <form>
+                    <input class ="fields" type="text" name="fullname" placeholder="Full Name" required>
+                    <input class ="fields" type="email" name="email" placeholder="Email" required>
+                    <input class ="fields" type="password" name="password" placeholder="Password" required>
+                    <input class ="fields" type="password" name="confirm-password" placeholder="Confirm Password" required>
+                    <input class ="fields" type="text" name="dob" placeholder="dd/mm/yyyy" onfocus="this.type='date'" required>
+
+                    <div class="radio">
+                        <label>
+                            <input class="checks" type="radio" name="role" value="student" required> Student
+                        </label>
+                        <label>
+                            <input class="checks" type="radio" name="role" value="employee" required> Employee
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="terms" required> I agree to all the Terms and conditions
+                        </label>
+                    </div>
+
+                    <button type="submit">Signup</button>
+                </form>
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>
